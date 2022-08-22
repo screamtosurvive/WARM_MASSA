@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>WarM-Massa</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -15,7 +16,15 @@
   </head>
 
   <body>
-    <%= yield %>
-
+        <div class="page-container">
+        <%= render "shared/navbar" %>
+        <main id="main-content">
+          <%= yield %>
+        </main>
+        <%= render "shared/footer" %>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+        <%= render 'shared/flashes' %>
+      </div>
   </body>
 </html>
