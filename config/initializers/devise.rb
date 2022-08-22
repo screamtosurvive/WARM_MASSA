@@ -14,7 +14,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '0f803e4a9c99231ec11588f08936d90aeb127eacbba07484b5f2c56ebc827dd142766b480a3cbdabed932f0411da3e8ff80e2910998d8e0225638f57f9a215b5'
+  # config.secret_key = 'e21f80e7aa804587b7f653e3b5c1c0849e0ee4d3ecf043c28db6cab7d1a21ff4256664d659f96355c5977e8a5eaa9216692073c4652f8d928e82d01ba75fabcc'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -126,7 +126,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'b840123fbf88f225ea80ca14a3fd80c5df7f51c66ac93500c2a9861ba6c49a23c088381378f49854b391c039ef9b7c35ba6ae80424204294851be67b815bcd1e'
+  # config.pepper = '840656732c118376c28f0a421cdfb00ef32f72309d1de936a83eb5670a559d92e6b2d478747531169a7523f09da6701de52c1b2b844d91df01cb90d1ea688fb4'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -224,7 +224,7 @@ Devise.setup do |config|
   # Time interval you can reset your password with a reset password key.
   # Don't put a too small interval or your users won't have the time to
   # change their passwords.
-  config.reset_password_within = 2.hours
+  config.reset_password_within = 6.hours
 
   # When set to false, does not sign a user in automatically after their password is
   # reset. Defaults to true, so a user is signed in automatically after a reset.
@@ -290,7 +290,7 @@ Devise.setup do |config|
   #     mount MyEngine, at: '/my_engine'
   #
   # The router that invoked `devise_for`, in the example above, would be:
-  config.router_name = :my_engine
+  # config.router_name = :my_engine
   #
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
